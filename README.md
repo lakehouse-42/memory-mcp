@@ -1,4 +1,4 @@
-# @lakehouse42/memory-mcp
+# @lakehouse/memory-mcp
 
 Persistent memory for AI assistants via [Model Context Protocol (MCP)](https://modelcontextprotocol.io).
 
@@ -24,7 +24,7 @@ Add to `~/.claude/claude_code_config.json`:
   "mcpServers": {
     "memory": {
       "command": "npx",
-      "args": ["@lakehouse42/memory-mcp"]
+      "args": ["@lakehouse/memory-mcp"]
     }
   }
 }
@@ -41,7 +41,7 @@ For full semantic search capabilities, connect to Lakehouse42:
   "mcpServers": {
     "memory": {
       "command": "npx",
-      "args": ["@lakehouse42/memory-mcp"],
+      "args": ["@lakehouse/memory-mcp"],
       "env": {
         "LH42_URL": "https://api.lakehouse42.com",
         "LH42_API_KEY": "lh42_your_api_key"
@@ -62,7 +62,7 @@ Add to Claude Desktop's config (Settings → Developer → Edit Config):
   "mcpServers": {
     "memory": {
       "command": "npx",
-      "args": ["@lakehouse42/memory-mcp"],
+      "args": ["@lakehouse/memory-mcp"],
       "env": {
         "LH42_URL": "https://api.lakehouse42.com",
         "LH42_API_KEY": "lh42_your_api_key"
@@ -145,7 +145,7 @@ Check memory system status and backend info.
 ## Programmatic Usage
 
 ```typescript
-import { createMemoryServer, LH42Backend } from "@lakehouse42/memory-mcp";
+import { createMemoryServer, LH42Backend } from "@lakehouse/memory-mcp";
 
 // Create server with custom config
 const server = await createMemoryServer({

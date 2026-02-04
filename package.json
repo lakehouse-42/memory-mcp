@@ -1,5 +1,5 @@
 {
-  "name": "@lakehouse42/memory-mcp",
+  "name": "@lakehouse/memory-mcp",
   "version": "0.1.0",
   "description": "Persistent memory for AI assistants via MCP. Works with Claude Code, Cursor, Windsurf, and any MCP-compatible client.",
   "keywords": ["mcp", "memory", "ai", "claude", "assistant", "lakehouse42", "lh42"],

@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 /**
- * @lakehouse42/memory-mcp
+ * @lakehouse/memory-mcp
  *
  * Persistent memory for AI assistants via MCP.
  * Works with Claude Code, Cursor, Windsurf, and any MCP-compatible client.
  *
  * Usage:
- *   npx @lakehouse42/memory-mcp
+ *   npx @lakehouse/memory-mcp
  *
  * Configuration (environment variables):
  *   LH42_URL     - Lakehouse42 API URL (optional, uses local storage if not set)
@@ -18,7 +18,7 @@
  *     "mcpServers": {
  *       "memory": {
  *         "command": "npx",
- *         "args": ["@lakehouse42/memory-mcp"],
+ *         "args": ["@lakehouse/memory-mcp"],
  *         "env": {
  *           "LH42_URL": "https://api.lakehouse42.com",
  *           "LH42_API_KEY": "lh42_xxx"
