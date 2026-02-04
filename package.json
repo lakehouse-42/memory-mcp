@@ -1,0 +1,45 @@
+{
+  "name": "@lakehouse42/memory-mcp",
+  "version": "0.1.0",
+  "description": "Persistent memory for AI assistants via MCP. Works with Claude Code, Cursor, Windsurf, and any MCP-compatible client.",
+  "keywords": ["mcp", "memory", "ai", "claude", "assistant", "lakehouse42", "lh42"],
+  "author": "Lakehouse42 <hello@lakehouse42.com>",
+  "license": "MIT",
+  "homepage": "https://lakehouse42.com/memory/docs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lakehouse-42/memory-mcp.git"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "memory-mcp": "./bin/memory-mcp.js"
+  },
+  "files": [
+    "dist",
+    "bin"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --clean",
+    "dev": "tsup src/index.ts --format esm --watch",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
