@@ -38,7 +38,7 @@ var LH42Backend = class {
     }
   }
   async remember(input) {
-    const response = await this.fetch("/memory/process", {
+    const response = await this.fetch("/mcp/memory/process", {
       method: "POST",
       body: JSON.stringify({
         content: input.content,
@@ -84,7 +84,7 @@ var LH42Backend = class {
     return response.ok;
   }
   async search(input) {
-    const response = await this.fetch("/memory/search", {
+    const response = await this.fetch("/mcp/memory/search", {
       method: "POST",
       body: JSON.stringify({
         query: input.query,

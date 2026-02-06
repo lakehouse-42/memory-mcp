@@ -58,7 +58,7 @@ export class LH42Backend implements MemoryBackend {
   }
 
   async remember(input: RememberInput): Promise<Memory> {
-    const response = await this.fetch("/memory/process", {
+    const response = await this.fetch("/mcp/memory/process", {
       method: "POST",
       body: JSON.stringify({
         content: input.content,
@@ -114,7 +114,7 @@ export class LH42Backend implements MemoryBackend {
   }
 
   async search(input: SearchInput): Promise<MemorySearchResult[]> {
-    const response = await this.fetch("/memory/search", {
+    const response = await this.fetch("/mcp/memory/search", {
       method: "POST",
       body: JSON.stringify({
         query: input.query,
